@@ -9,7 +9,7 @@ namespace CS25
         [SerializeField] AudioClip DestroySound;
 
         private AudioSource Source;
-        private const float MinYPosition = 2;
+        private const float MinYPosition = 0;
 
 
         private void Start()

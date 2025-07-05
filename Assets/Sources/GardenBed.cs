@@ -55,6 +55,9 @@ namespace CS25
                 }
                 else
                 {
+                    Bed.SoundPlayer.clip = Bed.GrewSound;
+                    Bed.SoundPlayer.Play();
+
                     var bed = new GrewStage();
                     bed.SetBed(Bed);
 
@@ -72,9 +75,6 @@ namespace CS25
         {
             public override GrowTimeStage NextStage()
             {
-                Bed.SoundPlayer.clip = Bed.GrewSound;
-                Bed.SoundPlayer.Play();
-
                 PlantedBedsCount--;
 
                 var bed = new UnplantedStage();

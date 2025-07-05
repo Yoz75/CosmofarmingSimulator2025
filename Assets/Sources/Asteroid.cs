@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 namespace CS25
@@ -15,14 +16,23 @@ namespace CS25
         {
             Source = GetComponent<AudioSource>();
             Source.clip = DestroySound;
+
+            StartCoroutine(FallCoroutine());
         }
 
-        private void Update()
+        private IEnumerator FallCoroutine()
         {
-            if(transform.position.y < MinYPosition)
+            bool shoudsUpdate = true;
+            while(shoudsUpdate)
             {
-                Source.Play();
-                GameState.Instance.Die();
+                if(transform.position.y < MinYPosition)
+                {
+                    Source.Play();
+                    GameState.Instance.Die();
+                    shoudsUpdate=false;
+                }
+
+                yield return null;
             }
         }
     }

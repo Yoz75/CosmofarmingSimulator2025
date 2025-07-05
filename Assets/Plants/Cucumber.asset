@@ -25,4 +25,4 @@ MonoBehaviour:
   - Sprite: {fileID: -2155911506463333859, guid: f3e3f247978a090499d058878d50c7ac, type: 3}
     StageTime: 2.5
   - Sprite: {fileID: 259302540372706172, guid: f3e3f247978a090499d058878d50c7ac, type: 3}
-    StageTime: 0.1
+    StageTime: 0.01

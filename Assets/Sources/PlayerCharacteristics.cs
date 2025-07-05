@@ -47,6 +47,11 @@ namespace CS25
         private void FixedUpdate()
         {
             Oxygen -= BaseOxygenDecrease * GameDifficulty.Instance.GetDifficulty();
+
+            if(Oxygen <= 0)
+            {
+                GameState.Instance.Die();
+            }
         }
     }
 }

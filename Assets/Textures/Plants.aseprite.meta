@@ -445,7 +445,7 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Plants_14
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0, y: 0}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
@@ -466,7 +466,7 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Plants_15
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0, y: 0}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
@@ -487,7 +487,7 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Plants_16
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0, y: 0}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
@@ -508,7 +508,7 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Plants_17
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0, y: 0}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
@@ -529,7 +529,7 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Plants_18
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0, y: 0}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
@@ -540,6 +540,48 @@ ScriptedImporter:
       width: 24
       height: 24
     spriteID: 046484c783ca7ae42ad5dde8798cc3af
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Plants_19
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 124
+      y: 4
+      width: 24
+      height: 24
+    spriteID: bb792abc6c76628479da2cc55adfe142
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Plants_20
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 148
+      y: 4
+      width: 24
+      height: 24
+    spriteID: ab3009a959bd4754792c4cd2ca3ff202
     spriteBone: []
     spriteOutline: []
     vertices: []

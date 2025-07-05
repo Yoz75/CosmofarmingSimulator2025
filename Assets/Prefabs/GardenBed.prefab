@@ -134,6 +134,7 @@ MonoBehaviour:
   LMBClickAction: {fileID: -308092729634286086, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   Plant: {fileID: 11400000, guid: 1ee40d7471ca50a48809aa318837310c, type: 2}
   GrewSound: {fileID: 0}
+  CutSound: {fileID: 8300000, guid: 7a94ca9044e50074bbe95d360a9ddfec, type: 3}
 --- !u!61 &6717332469533114403
 BoxCollider2D:
   m_ObjectHideFlags: 0

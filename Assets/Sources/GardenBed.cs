@@ -146,7 +146,6 @@ namespace CS25
 
         protected override void OnClickEnter()
         {
-            Debug.Log(PlantedBedsCount);
             if(Stage is GrewStage or RottenStage)
             {
                 Stage.SetBed(this);

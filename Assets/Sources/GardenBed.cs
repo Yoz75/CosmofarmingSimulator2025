@@ -119,6 +119,8 @@ namespace CS25
 
         private GrowTimeStage Stage = new UnplantedStage();
 
+        private bool CanBeClicked = true;
+
         private static int PlantedBedsCount_;
         public static int PlantedBedsCount
         {
@@ -142,10 +144,14 @@ namespace CS25
         {
             Renderer = GetComponent<SpriteRenderer>();
             SoundPlayer = GetComponent<AudioSource>();
+
+            GameState.Instance.StateChanged += (state) => { if(state == State.Death) CanBeClicked = false; };
         }
 
         protected override void OnClickEnter()
         {
+            if(!CanBeClicked) return;
+
             if(Stage is GrewStage or RottenStage)
             {
                 Stage.SetBed(this);

@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Podeli
+namespace CS25
 {
     [RequireComponent(typeof(Button))]
     public class ButtonSoundOnClick : MonoBehaviour

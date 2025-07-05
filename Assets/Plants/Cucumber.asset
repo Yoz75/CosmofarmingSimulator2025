@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d10702151847404fbae3a9f29124cf0, type: 3}
   m_Name: Cucumber
   m_EditorClassIdentifier: 
-  Cost: 3
+  Cost: 7
   RotChance: 0.45
   RottenSprite: {fileID: 2231668963000300224, guid: f3e3f247978a090499d058878d50c7ac, type: 3}
   GrowStages:

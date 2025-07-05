@@ -19,22 +19,26 @@ namespace CS25
 
         private class UnplantedStage : GrowTimeStage
         {
-            public UnplantedStage()
-            {
-                PlantedBedsCount--;
-            }
-
             public override GrowTimeStage NextStage()
             {
+                if(PlantedBedsCount >= MaxPlantedBeds)
+                {
+                    PlantedLimitReached?.Invoke();
+                    return this; 
+                }
+
                 PlantedBedsCount++;
                 var bed = new PlantedStage();
                 bed.SetBed(Bed);
-
                 return bed;
             }
 
-            public override void OnClick() => Bed.PlantPlant();
+            public override void OnClick()
+            {
+                Bed.PlantPlant();
+            }
         }
+
 
         private class PlantedStage : GrowTimeStage
         {
@@ -71,6 +75,8 @@ namespace CS25
                 Bed.SoundPlayer.clip = Bed.GrewSound;
                 Bed.SoundPlayer.Play();
 
+                PlantedBedsCount--;
+
                 var bed = new UnplantedStage();
                 bed.SetBed(Bed);
 
@@ -87,6 +93,7 @@ namespace CS25
         {
             public override GrowTimeStage NextStage()
             {
+                PlantedBedsCount--;
                 var bed = new UnplantedStage();
                 bed.SetBed(Bed);
 
@@ -122,7 +129,7 @@ namespace CS25
 
             private set
             {
-                if(value < MaxPlantedBeds)
+                if(value <= MaxPlantedBeds)
                     PlantedBedsCount_ = value;
                 else
                 {
@@ -139,9 +146,19 @@ namespace CS25
 
         protected override void OnClickEnter()
         {
-            //ohhhh goood, this is govnocode
-            if(PlantedBedsCount > MaxPlantedBeds && (Stage is not GrewStage || Stage is not RottenStage))
+            Debug.Log(PlantedBedsCount);
+            if(Stage is GrewStage or RottenStage)
+            {
+                Stage.SetBed(this);
+                Stage.OnClick();
                 return;
+            }
+
+            if(Stage is UnplantedStage && PlantedBedsCount >= MaxPlantedBeds)
+            {
+                PlantedLimitReached?.Invoke();
+                return;
+            }
 
             Stage.SetBed(this);
             Stage.OnClick();

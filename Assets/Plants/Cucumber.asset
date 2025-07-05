@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d10702151847404fbae3a9f29124cf0, type: 3}
+  m_Name: Cucumber
+  m_EditorClassIdentifier: 
+  Cost: 3
+  RotChance: 0.45
+  RottenSprite: {fileID: 2231668963000300224, guid: f3e3f247978a090499d058878d50c7ac, type: 3}
+  GrowStages:
+  - Sprite: {fileID: -2351845954287089693, guid: f3e3f247978a090499d058878d50c7ac, type: 3}
+    StageTime: 0.25
+  - Sprite: {fileID: -7748181661814177769, guid: f3e3f247978a090499d058878d50c7ac, type: 3}
+    StageTime: 1
+  - Sprite: {fileID: -1803268832936143507, guid: f3e3f247978a090499d058878d50c7ac, type: 3}
+    StageTime: 1
+  - Sprite: {fileID: -2155911506463333859, guid: f3e3f247978a090499d058878d50c7ac, type: 3}
+    StageTime: 2.5
+  - Sprite: {fileID: 259302540372706172, guid: f3e3f247978a090499d058878d50c7ac, type: 3}
+    StageTime: 0.1

@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d10702151847404fbae3a9f29124cf0, type: 3}
+  m_Name: Pumpkin
+  m_EditorClassIdentifier: 
+  Cost: 10
+  RotChance: 0.1
+  RottenSprite: {fileID: -2096692734860594749, guid: f3e3f247978a090499d058878d50c7ac, type: 3}
+  GrowStages:
+  - Sprite: {fileID: 4755561326377371218, guid: f3e3f247978a090499d058878d50c7ac, type: 3}
+    StageTime: 0.5
+  - Sprite: {fileID: -809302352129875278, guid: f3e3f247978a090499d058878d50c7ac, type: 3}
+    StageTime: 2
+  - Sprite: {fileID: -821847796452395177, guid: f3e3f247978a090499d058878d50c7ac, type: 3}
+    StageTime: 2
+  - Sprite: {fileID: 6567162039273346183, guid: f3e3f247978a090499d058878d50c7ac, type: 3}
+    StageTime: 5
+  - Sprite: {fileID: 333848601974685604, guid: f3e3f247978a090499d058878d50c7ac, type: 3}
+    StageTime: 0.01

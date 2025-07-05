@@ -3894,6 +3894,22 @@ MonoBehaviour:
     DifficultyMultiplier: 5
   - StageTime: 10
     DifficultyMultiplier: 6
+  - StageTime: 15
+    DifficultyMultiplier: 6.5
+  - StageTime: 15
+    DifficultyMultiplier: 7
+  - StageTime: 15
+    DifficultyMultiplier: 7.5
+  - StageTime: 15
+    DifficultyMultiplier: 8
+  - StageTime: 15
+    DifficultyMultiplier: 9
+  - StageTime: 15
+    DifficultyMultiplier: 9
+  - StageTime: 15
+    DifficultyMultiplier: 9.5
+  - StageTime: 15
+    DifficultyMultiplier: 10
 --- !u!1001 &1377707000
 PrefabInstance:
   m_ObjectHideFlags: 0

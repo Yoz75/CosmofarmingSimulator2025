@@ -145,7 +145,14 @@ namespace CS25
             Renderer = GetComponent<SpriteRenderer>();
             SoundPlayer = GetComponent<AudioSource>();
 
-            GameState.Instance.StateChanged += (state) => { if(state == State.Death) CanBeClicked = false; };
+            GameState.Instance.StateChanged += (state) => 
+            {
+                if(state == State.Death)
+                {
+                    CanBeClicked = false;
+                    PlantedBedsCount_ = 0;
+                }
+            };
         }
 
         protected override void OnClickEnter()
